@@ -44,7 +44,7 @@ public class ContactServiceImpl implements ContactService {
     }
 
     @Override
-    public void removeContact(int id) {
+    public void removeContact(Integer id) {
         ContactModel contactModel = findContactById(id);
         if (contactModel != null) {
             contactRepository.delete(contactConverter.convertModel2Entity(contactModel));

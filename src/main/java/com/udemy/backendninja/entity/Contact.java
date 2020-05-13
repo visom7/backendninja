@@ -9,7 +9,7 @@ public class Contact {
     @Id
     @GeneratedValue
     @Column(name = "id")
-    private int id;
+    private Integer id;
     @Column(name = "firstName")
     private String firstName;
     @Column(name = "lastName")
@@ -22,7 +22,7 @@ public class Contact {
     public Contact() {
     }
 
-    public Contact(int id, String firstName, String lastName, String telephone, String city) {
+    public Contact(Integer id, String firstName, String lastName, String telephone, String city) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -30,11 +30,11 @@ public class Contact {
         this.city = city;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
